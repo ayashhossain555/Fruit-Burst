@@ -39,15 +39,387 @@
 </head>
 <body>
     <header>
-        <nav>
-            
-        </nav>
+        <div class="container mx-auto my-8 px-8 lg:px-24">
+            <div class="navbar bg-red-400 rounded-full px-8">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="hidden lg:flex space-x-4 text-white text-lg font-semibold">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <img src="./images/logo.png" alt="">
+                    <h6 class="ml-4 text-2xl font-semibold text-white">Fruit Burst</h6>
+                </div>
+                <div class="navbar-end">
+                  <div class="hidden lg:flex bg-white flex items-center justify-between px-6 py-3 rounded-full">
+                    <input type="text" placeholder="Search here">
+                    <img src="./images/search.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </div>
     </header>
     <main>
-
+        <div class="container mx-auto my-8 px-8 lg:px-24">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] h-[70vh] bg-center bg-cover flex items-center justify-center">
+                    <div class="absolute top-10 right-10 bg-red-700 px-4 py-2 text-white">
+                        <h1>Hot Deals!</h1>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <h6 class="text-2xl lg:text-6xl text-white text-center font-bold">Exotic tastes at your<br>doorstep</h6>
+                        <p class="text-center text-white w-2/3 my-4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nemo cum natus pariatur exercitationem repellendus.</p>
+                        <button class="btn bg-red-400 text-white border-none mx-auto">Explore more</button>
+                    </div>
+                  <div class="absolute bottom-0 right-5 space-x-4 flex justify-between transform -translate-y-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.png)] h-[70vh] bg-center bg-cover flex items-center justify-center">
+                    <div class="flex flex-col justify-center">
+                        <h6 class="text-2xl lg:text-6xl text-white text-center font-bold">Exotic tastes at your<br>doorstep</h6>
+                        <p class="text-center text-white w-2/3 my-4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nemo cum natus pariatur exercitationem repellendus.</p>
+                        <button class="btn bg-red-400 text-white border-none mx-auto">Explore more</button>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>  
+                <div id="slide3" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner3.png)] h-[70vh] bg-center bg-cover flex items-center justify-center">
+                    <div class="flex flex-col justify-center">
+                        <h6 class="text-2xl lg:text-6xl text-white text-center font-bold">Exotic tastes at your<br>doorstep</h6>
+                        <p class="text-center text-white w-2/3 my-4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nemo cum natus pariatur exercitationem repellendus.</p>
+                        <button class="btn bg-red-400 text-white border-none mx-auto">Explore more</button>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner4.png)] h-[70vh] bg-center bg-cover flex items-center justify-center">
+                    <div class="flex flex-col justify-center">
+                        <h6 class="text-2xl lg:text-6xl text-white text-center font-bold">Exotic tastes at your<br>doorstep</h6>
+                        <p class="text-center text-white w-2/3 my-4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nemo cum natus pariatur exercitationem repellendus.</p>
+                        <button class="btn bg-red-400 text-white border-none mx-auto">Explore more</button>
+                    </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden h-[20vh] w-3/4 mx-auto bg-white shadow-lg rounded-lg -translate-y-20 lg:flex items-center justify-center">
+                <div class="flex items-center justify-center space-x-4">
+                    <img src="./images/fruit1.png" alt="">
+                    <img src="./images/fruit2.png" alt="">
+                    <img src="./images/fruit3.png" alt="">
+                    <img src="./images/fruit4.png" alt="">
+                    <img src="./images/fruit5.png" alt="">
+                </div>
+              </div>
+        </div>
+        <section class="container mx-auto my-8 py-24 px-8 lg:px-24">
+            <div class="flex flex-col lg:flex-row jistify-center items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-2">Deal of the Day!</h2>
+                    <p class="lg:w-2/3 text-lg opacity-80">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae omnis in tenetur mollitia esse odit asperiores beatae provident sint eveniet, eaque autem magnam et! Optio?</p>
+                </div>
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                          </span>
+                          days
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                          </span>
+                          hours
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                          </span>
+                          min
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:46;"></span>
+                          </span>
+                          sec
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex space-y-4 flex-col justify-center items-center rounded-lg border-2 px-4 py-6">
+                    <img src="./images/fruit6.png" alt="">
+                    <h6>$12.99 - $18.99</h6>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <button class="btn btn-ghost text-red-400 mt-3">Details</button>
+                </div>
+                <div class="flex space-y-4 flex-col justify-center items-center rounded-lg border-2 px-4 py-6">
+                    <img src="./images/fruit7.png" alt="">
+                    <h6>$12.99 - $18.99</h6>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <button class="btn btn-ghost text-red-400 mt-3">Details</button>
+                </div>
+                <div class="flex space-y-4 flex-col justify-center items-center rounded-lg border-2 px-4 py-6">
+                    <img src="./images/fruit8.png" alt="">
+                    <h6>$12.99 - $18.99</h6>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <button class="btn btn-ghost text-red-400 mt-3">Details</button>
+                </div>
+                <div class="flex space-y-4 flex-col justify-center items-center rounded-lg border-2 px-4 py-6">
+                    <img src="./images/fruit9.png" alt="">
+                    <h6>$12.99 - $18.99</h6>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <button class="btn btn-ghost text-red-400 mt-3">Details</button>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto my-8 px-8 lg:px-24">
+            <div class="h-[70vh] rounded-lg w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] bg-center bg-cover flex flex-col justify-center items-center">
+                <div>
+                    <h6 class="text-2xl lg:text-6xl text-white text-center font-bold">Meet the Team</h6>
+                    <p class="text-center text-white w-2/3 my-4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nemo cum natus pariatur exercitationem repellendus.</p>
+                    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="flex space-y-2 flex-col justify-center items-center rounded-lg px-4 py-6 text-white">
+                            <img src="./images/member1.png" alt="">
+                            <h6 class="text-2xl font-bold">Name</h6>
+                            <p class="text-lg opacity-80">Position</p>
+                        </div>
+                        <div class="flex space-y-2 flex-col justify-center items-center rounded-lg px-4 py-6 text-white">
+                            <img src="./images/member2.png" alt="">
+                            <h6 class="text-2xl font-bold">Name</h6>
+                            <p class="text-lg opacity-80">Position</p>
+                        </div>
+                        <div class="flex space-y-2 flex-col justify-center items-center rounded-lg px-4 py-6 text-white">
+                            <img src="./images/member3.png" alt="">
+                            <h6 class="text-2xl font-bold">Name</h6>
+                            <p class="text-lg opacity-80">Position</p>
+                        </div>
+                        <div class="flex space-y-2 flex-col justify-center items-center rounded-lg px-4 py-6 text-white">
+                            <img src="./images/member4.png" alt="">
+                            <h6 class="text-2xl font-bold">Name</h6>
+                            <p class="text-lg opacity-80">Position</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto my-8 px-8 lg:px-24">
+            <div>
+                <h1 class="text-center font-extrabold text-5xl">Why choose us</h1>
+                <p class="text-center w-1/2 mx-auto mt-8 opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus amet dicta officiis velit beatae fuga!</p>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-24">
+                    <div>
+                        <div class="flex space-x-3">
+                            <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                                <img src="./images/group 1.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold">Dedicated Team</h4>
+                                <div class="divider"></div>
+                                <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3">
+                            <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                                <img src="./images/love 1.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold">Fresh is Best</h4>
+                                <div class="divider"></div>
+                                <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3">
+                            <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                                <img src="./images/gift-box 1.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold">Gift Collection</h4>
+                                <div class="divider"></div>
+                                <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/whychoose1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="flex space-x-3">
+                            <div class="text-right">
+                                <h4 class="text-2xl font-bold">Dedicated Team</h4>
+                                <div class="divider"></div>
+                                <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                                <img src="./images/group 1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex space-x-3">
+                            <div class="text-right">
+                                <h4 class="text-2xl font-bold">Dedicated Team</h4>
+                                <div class="divider"></div>
+                                <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                                <img src="./images/love 1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex space-x-3">
+                            <div class="text-right">
+                                <h4 class="text-2xl font-bold">Dedicated Team</h4>
+                                <div class="divider"></div>
+                                <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="h-12 w-12 rounded-full bg-slate-200 flex items-center justify-center">
+                                <img src="./images/gift-box 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto my-8 px-8 lg:px-24">
+            <h1 class="text-center font-extrabold text-5xl">Contact Us</h1>
+            <p class="text-center w-1/2 mx-auto mt-8 opacity-70">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil animi fugit exercitationem esse. Pariatur, ratione.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 mt-12 gap-6">
+                <div class="rounded-lg p-8 border-2 border-red-400 lg:col-span-2">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div>
+                            <label for="">First Name</label>
+                            <input type="text" placeholder="Type here" class="mt-2 input input-bordered w-full" />
+                        </div>
+                        <div>
+                            <label for="">Last Name</label>
+                            <input type="text" placeholder="Type here" class="mt-2 input input-bordered w-full" />
+                        </div>
+                        <div>
+                            <label for="">Email</label>
+                            <input type="text" placeholder="Type here" class="mt-2 input input-bordered w-full" />
+                        </div>
+                        <div>
+                            <label for="">Phone no.</label>
+                            <input type="text" placeholder="Type here" class="mt-2 input input-bordered w-full" />
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <label for="">Your Message</label>
+                        <textarea class="textarea textarea-bordered w-full mt-2 rows-8" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn bg-red-400 text-white mt-4">Send Message</button>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-6">
+                    <div class="border-2 rounded-lg p-8">
+                        <div class="mx-auto bg-slate-200 h-12 w-12 rounded lg flex justify-center items-center">
+                            <img src="./images/group 1.png" alt="">
+                        </div>
+                        <div class="text-center space-y-4">
+                            <h4 class="text-2xl font-bold">Dedicated Team</h4>
+                            <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="border-2 rounded-lg p-8">
+                        <div class="mx-auto bg-slate-200 h-12 w-12 rounded lg flex justify-center items-center">
+                            <img src="./images/group 1.png" alt="">
+                        </div>
+                        <div class="text-center space-y-4">
+                            <h4 class="text-2xl font-bold">Dedicated Team</h4>
+                            <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="border-2 rounded-lg p-8">
+                        <div class="mx-auto bg-slate-200 h-12 w-12 rounded lg flex justify-center items-center">
+                            <img src="./images/group 1.png" alt="">
+                        </div>
+                        <div class="text-center space-y-4">
+                            <h4 class="text-2xl font-bold">Dedicated Team</h4>
+                            <p class="text-lg opacity-70">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <aside>
+          <img src="./images/logo.png" alt="">
+          <h1 class="text-3xl font-extrabold">Fruit Burst</h1>
+          <p>Providing reliable products since 2022</p>
+        </aside> 
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 </body>
 </html>
